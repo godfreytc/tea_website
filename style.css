@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+}
+
+nav {
+  height: 80px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(33, 9, 121, 1) 60%,
+    rgba(0, 212, 255, 1) 100%
+  );
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem calc((100vw - 1300px) / 2);
+}
+
+.logo {
+  width: 127px;
+  height: 85px;
+  border-radius: 27px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 1.5rem;
+}
+
+.hero {
+  background: yellow;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 95vh;
+  padding: 3rem calc((100vw - 1300px) / 2);
+}
+
+.column-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #fff;
+  padding: 0rem 2rem;
+}
+
+.column-left h1 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.column-left p {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+button {
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  border: none;
+  color: #fff;
+  background: #000;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 27px;
+}
+button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.login_button {
+  padding: 1rem 2rem;
+  font-size: 11px;
+  border: none;
+  color: #fff;
+  margin-right: 5px;
+  background: #000;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
+    url("images/home.jpg");
+  /* opacity: 0.5; */
+}
+.about_us {
+  background: url("images/about.png") no-repeat center center fixed;
+  background-size: cover;
+}
+.courses {
+  background: url("images/Tech.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.testimonials {
+  background: url("images/Highlights.mp4");
+  background-size: cover;
+}
+.column-left .typing-demo {
+  width: 60ch;
+  animation: typing 2s steps(20), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+/* .column-left .typing-demo .text_hide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+} */
+
+/* .column-left .typing-demo .text_cursor {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  border-left: 3px solid black;
+} */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+.column-right .mySlides {
+  display: none;
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>TEA Login | Register</title>
+    <!-- Mobile Specific Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <!-- Font-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="login/css/montserrat-font.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="login/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css"
+    />
+    <!-- Main Style Css -->
+    <link rel="stylesheet" href="login/style.css" />
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body class="form-v10">
+    <nav>
+      <div><img class="logo" src="images/logo.jpg" /></div>
+      <div class="nav-items">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+
+        <!-- <a href="highlights.html">Highlights</a>
+        <a href="forum.html">Forum</a> -->
+
+        <a href="courses.html">Courses</a>
+        <!-- <ul>
+          <li>Tech</li>
+          <li>Agriculture</li>
+        </ul> -->
+        <!-- <a href="testimonial.html">Testimonial</a> -->
+        <a href="contact.html">Contact Us</a>
+        <button class="login_button">
+          <a href="login.html">Login | Register</a>
+        </button>
+      </div>
+    </nav>
+    <div class="page-content">
+      <div class="form-v10-content">
+        <form class="form-detail" action="#" method="post" id="myform">
+          <div class="form-left">
+            <h2>TEA Registration</h2>
+            <div class="form-row">
+              <select name="title">
+                <option class="option" value="title">Title</option>
+                <option class="option" value="businessman">Pastor</option>
+                <option class="option" value="reporter">Brother</option>
+                <option class="option" value="secretary">Sister</option>
+                <option class="option" value="secretary">Non-member</option>
+              </select>
+              <span class="select-btn">
+                <i class="zmdi zmdi-chevron-down"></i>
+              </span>
+            </div>
+            <div class="form-group">
+              <div class="form-row form-row-1">
+                <input
+                  type="text"
+                  name="first_name"
+                  id="first_name"
+                  class="input-text"
+                  placeholder="First Name"
+                  required
+                />
+              </div>
+              <div class="form-row form-row-2">
+                <input
+                  type="text"
+                  name="last_name"
+                  id="last_name"
+                  class="input-text"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <input
+                type="tel"
+                name="phone"
+                class="company"
+                id="phone"
+                placeholder="Phone Number..."
+                required
+              />
+            </div>
+            <div class="form-group">
+              <div class="form-row form-row-3">
+                <input
+                  type="text"
+                  name="your_email"
+                  id="your_email"
+                  class="input-text"
+                  required
+                  pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}"
+                  placeholder="Your Email"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form-right">
+            <h2>General Information</h2>
+            <div class="form-row">
+              <select name="Interest">
+                <option value="">What field are you interested in?</option>
+                <option value="Tech">Tech</option>
+                <option value="Agric">Agriculture</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <select name="courses">
+                <option>Select your course</option>
+                <option>Cybersecurity</option>
+                <option>Data Science</option>
+                <option>Sales Marketing</option>
+                <option>Code & Programming</option>
+                <option>Internet of Things</option>
+                <option>Artificial Intelligence</option>
+                <option>Seeds & Seedlings Production</option>
+                <option>Livestock</option>
+                <option>Fisheries</option>
+                <option>Poultry Farming</option>
+                <option>Horticulture</option>
+              </select>
+            </div>
+
+            <div class="form-checkbox">
+              <label class="container"
+                ><p>
+                  I do accept the
+                  <a href="#" class="text">Terms and Conditions</a> of your
+                  site.
+                </p>
+                <input type="checkbox" name="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="form-row-last">
+              <a href="dashboard.html"
+                ><input
+                  type="submit"
+                  name="register"
+                  class="register"
+                  value="Register"
+              /></a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
